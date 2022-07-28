@@ -879,7 +879,14 @@ Mobile header menu styling
     padding-top: 18px;
   }
   .header-wrapper .header-feature::before {
-    left: -42px;
+    left: -34px;
+  }
+}
+/* Universal (under 1120px) ----------- */
+@media only screen and (max-width: 1120px) {
+  .header-wrapper .header-feature::before {
+    left: -43px;
+    top: -50px;
   }
 }
 /* Universal (under 1080px) ----------- */
