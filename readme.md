@@ -1,6 +1,6 @@
 # Signable development task 1 - Website header
 
-You should find two versions of the header redevelopment for review
+Here you should find two versions of the header redevelopment for review
 
 index.html uses the mobile menu style from the existing site, whilst index-alt.html uses an inline menu layout instead. From a UI perspective it's often far better to honour the natural flow of a page so I'd tend to favour an inline menu over fixed position elements.
 
