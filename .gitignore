@@ -1,0 +1,5 @@
+# Signable header gitignore rules
+
+# Ignore css mapping
+config.codekit3
+.DS_Store

@@ -1,0 +1,17 @@
+// File: main.scss
+
+// Import Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@400;500;700&display=swap');
+
+//Style abstracts
+@import 'abstracts/variables';
+
+//Style defaults 
+@import 'base/reset';
+@import 'base/defaults';
+
+//Layout elements
+@import 'layout/header';
+
+//Layout components
+@import 'components/linkstyles';

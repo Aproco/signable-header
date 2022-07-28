@@ -1,0 +1,88 @@
+// File: _defaults.scss
+// Default project styles go here
+body {
+	font: Arial, Helvetica, sans-serif; 
+	@extend .roboto; 
+	font-size: $base-font-size; 
+	font-weight: $base-font-weight;
+	line-height: 1;
+}
+
+body, select, input, textarea {color: #333;}
+
+a {color: #03f;}
+a:hover {color: #69f;}
+
+/* Custom text-selection colors */
+::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
+::selection {background: #fcd700; color: #fff; text-shadow: none;}
+
+/*	j.mp/webkit-tap-highlight-color */
+a:link {-webkit-tap-highlight-color: #fcd700;}
+
+ins {background-color: #fcd700; color: #000; text-decoration: none;}
+mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
+
+/* Mozilla dosen't style placeholders by default */
+input:-moz-placeholder { color:#a9a9a9; }
+textarea:-moz-placeholder { color:#a9a9a9; }
+
+/* let's give blockquotes *some* default styling, because unstyled blockquotes are dangerous */
+blockquote {padding: 16px; background: #eee;}
+
+h1 {
+	@extend .roboto-slab;
+	font-size: $large-heading;
+	line-height: 1.2em;
+	margin-bottom: 1rem;
+}
+h2 {
+	line-height: 1.3em;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.fullcol {
+	width: 100%;
+}
+.midcol {
+	width: 100%;
+	max-width: 1018px;
+	margin: 0 auto;
+}
+
+.bg-dark {
+	color: $color-white;
+	a {
+		color: $color-white;
+	}
+}
+
+.roboto {font-family: 'Roboto', sans-serif;}
+.roboto-slab {font-family: 'Roboto Slab', serif;}
+
+//Universal styles
+.gorel {position: relative;}
+
+//Simple classes for smoothly transitioning elements
+.trans {
+    transition: all 250ms ease;    
+}
+.translow {
+    transition: all 500ms ease;    
+}
+
+/* Media queries!
+-------------------------------------------------------------------------------*/
+.mobile-only {display: none;}
+.desktop-only {display: block;}
+
+/* Universal (under 999px) ----------- */
+@media only screen 
+and (max-width : 999px)  {
+	.mobile-only {display: block;}
+	.desktop-only {display: none;}
+}

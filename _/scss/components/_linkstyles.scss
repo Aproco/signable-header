@@ -1,0 +1,30 @@
+// File: _linkstyles.scss
+
+.button-link {
+    background-color: $color-bluedk;
+    color: $color-white;
+    padding: 20px 29px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block;
+    &:hover {
+        background-color: $color-bluedklt;
+    }
+}
+
+.link-withicon {
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 18.5px auto;
+    //min-height: 26px;
+    padding-top: 1px;
+    padding-left: 25px;
+    display: inline-block;
+    &:hover {
+        text-decoration: none;
+    }
+    &.icon-signdoc {
+        background-image: url('../img/icon_sign_document.svg');
+    }
+}
